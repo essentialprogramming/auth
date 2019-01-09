@@ -56,9 +56,9 @@
 
 *   **OAuth 2** – OAuth is an open standard for authorization   specified in the [OAuth 2.0 Authorization Framework](http://tools.ietf.org/html/rfc6749)  . The purpose of OAUTH is to allow access to some resource by third parties without having to share client username/password (credentials). This access can then be selectively granted and revoked by the client at any time. It establishes a trust relationship between the client and the third party. OAuth achieves this by introducing an authorization layer and separating the role of the client from that of the resource owner. OAuth defines four primary roles:
 
-    *  **Resource owner** (RO)**: The entity that can _grant access_ to a **protected resource** exposed by an API.  Typically this is the end-user.  
+    *  **Resource owner** (RO): The entity that can _grant access_ to a **protected resource** exposed by an API.  Typically this is the end-user.  
     *  **Client**: The mobile application, web site, and so on, that wants to access a **protected resource** on behalf of the **resource owner**.
-    *  **Authorization server** (AS: The Security Token Service (STS) or OAuth server that issues **tokens**.  The authorization server will typically have two primary URLs, one for the authorization request and one for applications to use to grant access tokens. These are usually something such as:  
+    *  **Authorization server** (AS): The Security Token Service (STS) or OAuth server that issues **tokens**.  The authorization server will typically have two primary URLs, one for the authorization request and one for applications to use to grant access tokens. These are usually something such as:  
             *https://authorization-server.com/authorize*  
             **https://authorization-server.com/token**
     *  **Resource server** (RS):   The server _hosting_ the **protected resources**. This is the _API_ you want to access.  Resource servers rely on some kind of information to decide whether access to a protected resource should be _granted_. For RESTful-based resource servers, that information is usually carried in a _security token_, typically sent as a **bearer token** along with every request to the server. Web applications that rely on a session to authenticate users usually store that information in the user’s session and retrieve it from there for each request    
