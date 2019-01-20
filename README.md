@@ -2,13 +2,13 @@
 
 *   **Basic Authentication** – This is the simplest way to secure your RESTful Web Service. When using this option, the browser presents a challenge popup when you are accessing a secured URI, the username/password combination which will then be base64 encoded and stored in the request header. This encoded string will be checked with each request and verified against the username/password stored on the server.
 
-            **Challenge** :   WWW-Authenticate: Basic realm="WallyWorld"    
+            **Challenge** :   WWW-Authenticate: Basic realm="digitalconsulting"    
             **Example** : Header   Authorization: Basic ZGVtbzpwQDU1dzByZA=_=  
             (**_Authorization_**: Basic **Base64**($USER : $_**PASSWORD**)  )
 
 *   **Digest Authentication** – Digest Authentication is better than Basic Authentication, as it does not send username and password over the network. Instead it transmits a one-way cryptography hash of the password and additional data. The caveat, however, is that the authenticating server requires an unencrypted password be made available to it so that it can calculate the one-way cryptographic digest used in the validation process.
 
-*   **Cookie Authentication**   Cookie authentication uses [HTTP cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) to authenticate client requests and maintain session information. It works as follows:
+*   **Cookie Authentication** - Cookie authentication uses [HTTP cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) to authenticate client requests and maintain session information. It works as follows:
     1.  The client sends a login request to the server.
     2.  On the successful login, the server response includes the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) header that contains the cookie name, value, expiry time and some other info. Here is an example that sets the cookie named JSESSIONID:
         1.  Set-Cookie: JSESSIONID=abcde12345; Path=/; **HttpOnly**
