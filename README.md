@@ -2,7 +2,7 @@
 
 *   **Basic Authentication** – This is the simplest way to secure your RESTful Web Service. When using this option, the browser presents a challenge popup when you are accessing a secured URI, the username/password combination which will then be base64 encoded and stored in the request header. This encoded string will be checked with each request and verified against the username/password stored on the server.
 
-            **Challenge** :   WWW-Authenticate: Basic realm="digitalconsulting"    
+            **Challenge** :   WWW-Authenticate: Basic realm="essentialprogramming"    
             **Example** : Header   Authorization: Basic ZGVtbzpwQDU1dzByZA=_=  
             (**_Authorization_**: Basic **Base64**($USER : $_**PASSWORD**)  )
 
